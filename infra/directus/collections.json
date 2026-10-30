@@ -1,0 +1,119 @@
+{
+  "note": "MVP schema reference only. This is not an importable Directus snapshot or executable migration. Bootstrap, permissions and integration tests remain to be implemented. See docs/cms-schema.md and docs/AI_HANDOFF.md.",
+  "site_configuration": {
+    "source": "apps/web/config/site.config.json",
+    "owns": ["company identity", "branding", "contact", "social links", "navigation", "theme", "static page copy and SEO", "homepage block order and settings"],
+    "editor": "/customize is development-only and exports JSON; it does not save repository files or CMS records.",
+    "legacy_collections_not_consumed_by_frontend": ["global_settings", "menus", "menu_items", "homepage_content", "homepage_sections", "pages"]
+  },
+  "navigation_groups": {
+    "NỘI DUNG": ["statistics", "services", "projects", "articles", "gallery_items"],
+    "NĂNG LỰC": ["certificates", "equipment", "team_members"],
+    "DOANH NGHIỆP": ["partners", "company_locations", "company_profiles"],
+    "KHÁCH HÀNG": ["contact_requests"],
+    "HỆ THỐNG": ["directus_files"]
+  },
+  "collections": [
+    "company_locations",
+    "statistics",
+    "services",
+    "projects",
+    "articles",
+    "team_members",
+    "certificates",
+    "equipment",
+    "partners",
+    "gallery_items",
+    "company_profiles",
+    "contact_requests"
+  ],
+  "vietnamese_labels": {
+    "statistics": "Thống kê",
+    "services": "Dịch vụ",
+    "projects": "Dự án",
+    "articles": "Tin tức",
+    "gallery_items": "Thư viện",
+    "certificates": "Chứng chỉ",
+    "equipment": "Thiết bị",
+    "team_members": "Nhân sự",
+    "partners": "Đối tác",
+    "company_locations": "Văn phòng",
+    "company_profiles": "Hồ sơ năng lực",
+    "contact_requests": "Yêu cầu liên hệ",
+    "featured_image": "Ảnh đại diện",
+    "short_description": "Mô tả ngắn",
+    "order": "Thứ tự hiển thị",
+    "enabled": "Hiển thị ngoài website",
+    "featured": "Nổi bật",
+    "status": "Trạng thái theo collection",
+    "publish_status": "Trạng thái xuất bản dự án",
+    "pdf_url": "Đường dẫn PDF",
+    "seo_title": "Tiêu đề SEO",
+    "seo_description": "Mô tả SEO",
+    "og_image": "Ảnh chia sẻ mạng xã hội"
+  },
+  "common_fields": {
+    "id": "identifier required for collection records",
+    "enabled": "boolean where supported by the frontend model",
+    "featured": "boolean where content can appear in a featured homepage block",
+    "order": "number where used by content.ts sorting; not an automatic sort_order alias",
+    "seo_title": "optional string on services, projects and articles",
+    "seo_description": "optional text on services, projects and articles",
+    "og_image": "optional file on services, projects and articles"
+  },
+  "publication_contract": {
+    "services": "status: draft | published | archived; frontend type currently allows status to be absent",
+    "articles": "status: draft | published | archived; frontend requests published only",
+    "certificates": "status: draft | published | archived; frontend requests published and enabled only",
+    "projects": {
+      "status": "planning | in_progress | completed (progress, not publication)",
+      "publish_status": "draft | published | archived (separate publication field)",
+      "enabled": "optional boolean",
+      "note": "The provider also accepts project_status/progress_status and publication_status aliases. A CMS using status for publication needs explicit mapping and integration tests. Enforce CMS publication permissions even when using a server token."
+    }
+  },
+  "integration_notes": {
+    "keys": "The REST client recursively camelizes snake_case keys; it does not automatically map every relation or field type.",
+    "images": "Single images accept a file ID, URL/path or object with id/src. Gallery arrays require compatible image objects; junction relation mapping is not implemented generically.",
+    "categories": "Frontend category fields currently expect strings. Category collections and many-to-many relations need DTO mapping before use.",
+    "company_profiles": "pdf_url currently must be a URL/path string; file ID/object conversion is not implemented. An empty collection still falls back to the demo profile.",
+    "gallery_items": "The model has image/video/youtube types, but the current gallery route renders images only.",
+    "fallback": "Provider request errors can show demo data even in production; review this policy before deployment.",
+    "pagination": "Most list calls do not set an explicit limit or implement pagination."
+  },
+  "public_read_collections": [
+    "company_locations",
+    "statistics",
+    "services",
+    "projects",
+    "articles",
+    "team_members",
+    "certificates",
+    "equipment",
+    "partners",
+    "gallery_items",
+    "company_profiles"
+  ],
+  "private_collections": ["contact_requests"],
+  "permissions_note": "Read access must use field-level and publication/enabled filters as appropriate. Public users must not write records or read contact requests, drafts or admin data. The current client shares token headers for reads and writes; verify least-privilege server-token access.",
+  "roles": {
+    "Super Admin": "Full system access for developer or owner.",
+    "Website Admin": "Manage CMS records and media. Branding, navigation and homepage configuration are versioned in SiteConfig instead of CMS collections.",
+    "Content Editor": "Manage assigned public content and media with restricted publication permissions.",
+    "Viewer": "Read-only access to permitted CMS records."
+  },
+  "webhooks": {
+    "publish_revalidation": {
+      "status": "Next.js endpoint exists; Directus Flow is not provisioned by this file. Verify collection/path coverage during integration.",
+      "method": "POST",
+      "url": "https://domain.com/api/revalidate",
+      "headers": {
+        "x-revalidation-secret": "${REVALIDATION_SECRET}"
+      },
+      "body_example": {
+        "collection": "projects",
+        "slug": "nha-may-abc"
+      }
+    }
+  }
+}

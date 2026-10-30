@@ -1,0 +1,20 @@
+{
+  "name": "construction-corporate-platform",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.22.0",
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": "10.22.0"
+  },
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "lint": "pnpm --filter web lint",
+    "typecheck": "pnpm --filter web typecheck",
+    "test": "pnpm --filter web test",
+    "check": "pnpm lint && pnpm typecheck && pnpm test && pnpm build",
+    "docker:dev": "docker compose up --build",
+    "docker:prod": "docker compose -f docker-compose.prod.yml up --build -d"
+  }
+}

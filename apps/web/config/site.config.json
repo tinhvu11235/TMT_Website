@@ -1,0 +1,446 @@
+{
+  "version": 1,
+  "site": {
+    "locale": "vi"
+  },
+  "company": {
+    "name": "CÔNG TY TNHH TƯ VẤN XÂY DỰNG ABC",
+    "shortName": "ABC Engineering",
+    "englishName": "ABC Construction Consulting Co., Ltd.",
+    "tagline": "Giải pháp kỹ thuật tin cậy cho dự án xây dựng",
+    "description": "Đơn vị tư vấn xây dựng cung cấp giải pháp khảo sát, thiết kế, giám sát, thí nghiệm, quản lý dự án và thi công cho công trình dân dụng, công nghiệp và hạ tầng.",
+    "taxCode": "0000000000",
+    "foundedYear": "2004"
+  },
+  "brand": {
+    "logo": null,
+    "logoLight": null,
+    "logoDark": null,
+    "favicon": null
+  },
+  "contact": {
+    "phone": "028 0000 0000",
+    "hotline": "0900 000 000",
+    "email": "contact@example.com",
+    "salesEmail": "sales@example.com",
+    "address": "Tầng 8, Tòa nhà ABC, Quận 1, TP. Hồ Chí Minh",
+    "zalo": "https://zalo.me/0900000000",
+    "businessHours": "Thứ 2 đến Thứ 6, 08:00 đến 17:30",
+    "website": "https://example.com",
+    "mapsUrl": "https://maps.google.com",
+    "floatingEnabled": true
+  },
+  "social": {
+    "facebook": "https://facebook.com",
+    "youtube": "https://youtube.com",
+    "linkedin": "https://linkedin.com"
+  },
+  "navigation": {
+    "primary": [
+      {
+        "id": "home",
+        "label": "Trang chủ",
+        "href": "/",
+        "target": "_self",
+        "enabled": true
+      },
+      {
+        "id": "about",
+        "label": "Giới thiệu",
+        "href": "/gioi-thieu",
+        "target": "_self",
+        "enabled": true
+      },
+      {
+        "id": "services",
+        "label": "Dịch vụ",
+        "href": "/dich-vu",
+        "target": "_self",
+        "enabled": true
+      },
+      {
+        "id": "projects",
+        "label": "Dự án",
+        "href": "/du-an",
+        "target": "_self",
+        "enabled": true
+      },
+      {
+        "id": "capabilities",
+        "label": "Năng lực",
+        "href": "/nang-luc",
+        "target": "_self",
+        "enabled": true
+      },
+      {
+        "id": "news",
+        "label": "Tin tức",
+        "href": "/tin-tuc",
+        "target": "_self",
+        "enabled": true
+      },
+      {
+        "id": "contact",
+        "label": "Liên hệ",
+        "href": "/lien-he",
+        "target": "_self",
+        "enabled": true
+      }
+    ],
+    "headerActions": [
+      {
+        "id": "profile",
+        "label": "Hồ sơ năng lực",
+        "href": "/ho-so-nang-luc",
+        "target": "_self",
+        "enabled": true,
+        "style": "secondary"
+      },
+      {
+        "id": "contact-action",
+        "label": "Liên hệ",
+        "href": "/lien-he",
+        "target": "_self",
+        "enabled": true,
+        "style": "accent"
+      }
+    ],
+    "footerLegal": [
+      {
+        "id": "privacy",
+        "label": "Chính sách bảo mật",
+        "href": "/chinh-sach-bao-mat",
+        "target": "_self",
+        "enabled": true
+      }
+    ],
+    "labels": {
+      "navigation": "Điều hướng",
+      "services": "Dịch vụ",
+      "contact": "Liên hệ"
+    }
+  },
+  "seo": {
+    "defaultTitle": "ABC Engineering | Tư vấn xây dựng và quản lý dự án",
+    "titleTemplate": "%s | ABC Engineering",
+    "defaultDescription": "Website doanh nghiệp mẫu cho công ty tư vấn xây dựng, thiết kế, giám sát, khảo sát, thí nghiệm và quản lý dự án.",
+    "siteName": "CÔNG TY TNHH TƯ VẤN XÂY DỰNG ABC",
+    "locale": "vi_VN",
+    "defaultOgImage": {
+      "src": "https://picsum.photos/seed/abc-og/1200/800",
+      "alt": "Công trình xây dựng hiện đại",
+      "width": 1200,
+      "height": 800
+    }
+  },
+  "theme": {
+    "primary": "#07569C",
+    "secondary": "#102231",
+    "accent": "#F2A900",
+    "background": "#F5F7FA",
+    "foreground": "#102231",
+    "surface": "#FFFFFF",
+    "muted": "#F8FAFC",
+    "mutedForeground": "#475569",
+    "border": "#E2E8F0"
+  },
+  "pages": {
+    "home": {
+      "seo": {
+        "title": "ABC Engineering | Tư vấn xây dựng và quản lý dự án",
+        "description": "Website doanh nghiệp mẫu cho công ty tư vấn xây dựng, thiết kế, giám sát, khảo sát, thí nghiệm và quản lý dự án.",
+        "indexable": true
+      },
+      "blocks": [
+        {
+          "id": "home-hero",
+          "type": "hero",
+          "enabled": true,
+          "config": {
+            "eyebrow": "Giải pháp tư vấn và xây dựng toàn diện",
+            "title": "Đồng hành từ khảo sát, thiết kế đến giám sát và quản lý dự án",
+            "description": "Công ty TNHH Đầu tư Xây dựng Thương mại TMT cung cấp giải pháp tư vấn, thiết kế, giám sát, thi công cho công trình dân dụng, công nghiệp và hạ tầng. Chúng tôi cam kết chất lượng – an toàn – hiệu quả – đúng tiến độ.",
+            "image": {
+              "src": "/images/home-hero-construction.png",
+              "alt": "Máy xúc làm việc tại công trường xây dựng",
+              "width": 2030,
+              "height": 626
+            },
+            "mobileImage": {
+              "src": "/images/home-hero-construction.png",
+              "alt": "Máy xúc làm việc tại công trường xây dựng",
+              "width": 2030,
+              "height": 626
+            },
+            "primaryCta": { "label": "Xem dự án", "href": "/du-an" },
+            "secondaryCta": { "label": "Liên hệ tư vấn", "href": "/lien-he" }
+          }
+        },
+        {
+          "id": "home-statistics",
+          "type": "statistics",
+          "enabled": false,
+          "config": { "limit": 4 }
+        },
+        {
+          "id": "home-about",
+          "type": "about",
+          "enabled": true,
+          "config": {
+            "eyebrow": "Giới thiệu",
+            "title": "Năng lực kỹ thuật của ABC Engineering",
+            "description": "Chúng tôi tổ chức đội ngũ theo từng nhóm chuyên môn, kết nối khảo sát, thiết kế, giám sát và quản lý dự án trong một quy trình thống nhất.",
+            "image": {
+              "src": "https://picsum.photos/seed/homepage-about/1200/800",
+              "alt": "Đội ngũ kỹ sư làm việc tại công trường",
+              "width": 1200,
+              "height": 800
+            },
+            "highlights": [
+              "Quy trình kiểm soát chất lượng rõ ràng",
+              "Hồ sơ, tiến độ và rủi ro được theo dõi liên tục",
+              "Linh hoạt triển khai cho nhiều loại hình công trình"
+            ],
+            "cta": { "label": "Tìm hiểu thêm", "href": "/gioi-thieu" }
+          }
+        },
+        {
+          "id": "home-services",
+          "type": "services",
+          "enabled": true,
+          "config": {
+            "title": "Dịch vụ kỹ thuật cho toàn bộ vòng đời dự án",
+            "description": "Danh sách dịch vụ được quản trị trong CMS. Khi admin thêm dịch vụ mới, frontend tự động cập nhật.",
+            "limit": 6
+          }
+        },
+        {
+          "id": "home-projects",
+          "type": "projects",
+          "enabled": true,
+          "config": {
+            "title": "Công trình tiêu biểu",
+            "description": "Ảnh lớn, thông tin rõ và filter theo loại công trình trên trang danh sách.",
+            "limit": 4,
+            "cta": { "label": "Xem tất cả", "href": "/du-an" }
+          }
+        },
+        {
+          "id": "home-capabilities",
+          "type": "capabilities",
+          "enabled": true,
+          "config": {
+            "eyebrow": "Năng lực",
+            "title": "Tổ chức chuyên môn theo chuẩn vận hành dự án",
+            "description": "Các nhóm khảo sát, thiết kế, thí nghiệm, giám sát và quản lý dự án phối hợp bằng một hệ thống hồ sơ thống nhất.",
+            "items": [
+              "Công trình dân dụng và công nghiệp",
+              "Khảo sát, thiết kế và kiểm định",
+              "Chứng chỉ và năng lực pháp lý",
+              "Đội ngũ kỹ sư chuyên trách"
+            ]
+          }
+        },
+        {
+          "id": "home-certificates",
+          "type": "certificates",
+          "enabled": true,
+          "config": {
+            "title": "Chứng chỉ và hồ sơ pháp lý",
+            "description": "Các chứng chỉ có thể quản trị bằng CMS và hiển thị dạng gallery.",
+            "limit": 4
+          }
+        },
+        {
+          "id": "home-news",
+          "type": "news",
+          "enabled": true,
+          "config": {
+            "title": "Tin tức và cập nhật",
+            "description": "Bài viết hỗ trợ SEO, trạng thái xuất bản, metadata và ảnh đại diện.",
+            "limit": 3
+          }
+        },
+        {
+          "id": "home-partners",
+          "type": "partners",
+          "enabled": true,
+          "config": {
+            "title": "Đối tác",
+            "description": "Logo đối tác lấy từ CMS, không hard-code trên giao diện.",
+            "limit": 8
+          }
+        },
+        {
+          "id": "home-cta",
+          "type": "cta",
+          "enabled": true,
+          "config": {
+            "title": "Bạn có dự án cần tư vấn?",
+            "description": "Gửi thông tin để đội ngũ kỹ thuật liên hệ, trao đổi phạm vi và đề xuất phương án phù hợp.",
+            "cta": { "label": "Liên hệ chúng tôi", "href": "/lien-he" }
+          }
+        }
+      ]
+    },
+    "about": {
+      "hero": {
+        "title": "Giới thiệu",
+        "description": "Thông tin tổng quan, lịch sử, tầm nhìn, năng lực tổ chức và đội ngũ lãnh đạo."
+      },
+      "seo": {
+        "title": "Giới thiệu",
+        "description": "Thông tin tổng quan, lịch sử, tầm nhìn, năng lực tổ chức và đội ngũ lãnh đạo.",
+        "indexable": true
+      },
+      "sections": {
+        "overview": {
+          "title": "Tổng quan công ty",
+          "description": "Đơn vị tư vấn xây dựng cung cấp giải pháp khảo sát, thiết kế, giám sát, thí nghiệm, quản lý dự án và thi công cho công trình dân dụng, công nghiệp và hạ tầng."
+        },
+        "history": {
+          "title": "Lịch sử hình thành",
+          "description": "Từ năm 2004, công ty tập trung xây dựng quy trình tư vấn kỹ thuật bền vững và dễ mở rộng."
+        },
+        "vision": {
+          "title": "Tầm nhìn",
+          "description": "Trở thành đối tác kỹ thuật tin cậy cho các chủ đầu tư trong lĩnh vực xây dựng, hạ tầng và công nghiệp."
+        },
+        "values": {
+          "title": "Giá trị cốt lõi",
+          "description": "Chính xác trong chuyên môn, minh bạch trong phối hợp và trách nhiệm trong từng hồ sơ bàn giao."
+        },
+        "organization": {
+          "title": "Cơ cấu tổ chức",
+          "description": "Các bộ phận chuyên môn phối hợp theo mô hình dự án, có người phụ trách rõ ràng cho từng đầu việc."
+        },
+        "facilities": {
+          "title": "Cơ sở vật chất",
+          "description": "Hệ thống thiết bị, phần mềm và biểu mẫu quản lý phục vụ khảo sát, thiết kế, thí nghiệm và giám sát."
+        }
+      },
+      "team": {
+        "title": "Ban lãnh đạo và nhân sự tiêu biểu",
+        "description": "Chỉ các hồ sơ được bật show_on_website mới hiển thị ngoài website."
+      }
+    },
+    "services": {
+      "hero": {
+        "title": "Dịch vụ",
+        "description": "Các dịch vụ tư vấn, khảo sát, thiết kế, giám sát, thí nghiệm, quản lý dự án và thi công."
+      },
+      "seo": {
+        "title": "Dịch vụ",
+        "description": "Các dịch vụ tư vấn, khảo sát, thiết kế, giám sát, thí nghiệm, quản lý dự án và thi công.",
+        "indexable": true
+      }
+    },
+    "projects": {
+      "hero": {
+        "title": "Dự án",
+        "description": "Danh sách dự án tiêu biểu, có thể lọc theo lĩnh vực, tình trạng và năm hoàn thành."
+      },
+      "seo": {
+        "title": "Dự án",
+        "description": "Danh sách dự án tiêu biểu, có thể lọc theo lĩnh vực, tình trạng và năm hoàn thành.",
+        "indexable": true
+      }
+    },
+    "capabilities": {
+      "hero": {
+        "title": "Năng lực",
+        "description": "Chứng chỉ, thiết bị, năng lực chuyên môn và hồ sơ năng lực của doanh nghiệp."
+      },
+      "seo": {
+        "title": "Năng lực",
+        "description": "Chứng chỉ, thiết bị, năng lực chuyên môn và hồ sơ năng lực của doanh nghiệp.",
+        "indexable": true
+      },
+      "certificatesTitle": "Chứng chỉ",
+      "equipmentTitle": "Thiết bị",
+      "profileCtaLabel": "Xem hồ sơ năng lực"
+    },
+    "news": {
+      "hero": {
+        "title": "Tin tức",
+        "description": "Hoạt động công ty, cập nhật dự án, tin ngành và thông báo."
+      },
+      "seo": {
+        "title": "Tin tức",
+        "description": "Hoạt động công ty, cập nhật dự án, tin ngành và thông báo.",
+        "indexable": true
+      }
+    },
+    "gallery": {
+      "hero": {
+        "title": "Thư viện",
+        "description": "Hình ảnh công trình, hoạt động, nhân sự, chứng chỉ và sự kiện."
+      },
+      "seo": {
+        "title": "Thư viện",
+        "description": "Hình ảnh công trình, hoạt động, nhân sự, chứng chỉ và sự kiện.",
+        "indexable": true
+      }
+    },
+    "partners": {
+      "hero": {
+        "title": "Đối tác",
+        "description": "Hệ sinh thái đối tác, chủ đầu tư và nhà cung cấp."
+      },
+      "seo": {
+        "title": "Đối tác",
+        "description": "Hệ sinh thái đối tác, chủ đầu tư và nhà cung cấp.",
+        "indexable": true
+      }
+    },
+    "contact": {
+      "hero": {
+        "title": "Liên hệ",
+        "description": "Gửi thông tin dự án hoặc liên hệ trực tiếp qua hotline, email và địa chỉ văn phòng."
+      },
+      "seo": {
+        "title": "Liên hệ",
+        "description": "Gửi thông tin dự án hoặc liên hệ trực tiếp qua hotline, email và địa chỉ văn phòng.",
+        "indexable": true
+      }
+    },
+    "companyProfile": {
+      "hero": {
+        "title": "Hồ sơ năng lực",
+        "description": "Tài liệu PDF được quản trị trong CMS, có phiên bản và ngày cập nhật."
+      },
+      "seo": {
+        "title": "Hồ sơ năng lực",
+        "description": "Tài liệu PDF được quản trị trong CMS, có phiên bản và ngày cập nhật.",
+        "indexable": true
+      }
+    },
+    "search": {
+      "hero": {
+        "title": "Tìm kiếm",
+        "description": "Tìm kiếm trong dịch vụ, dự án và tin tức."
+      },
+      "seo": {
+        "title": "Tìm kiếm",
+        "description": "Tìm kiếm trong dịch vụ, dự án và tin tức.",
+        "indexable": false
+      }
+    },
+    "privacy": {
+      "hero": {
+        "title": "Chính sách bảo mật",
+        "description": "Quy định thu thập và xử lý thông tin liên hệ trên website."
+      },
+      "seo": {
+        "title": "Chính sách bảo mật",
+        "description": "Quy định thu thập và xử lý thông tin liên hệ trên website.",
+        "indexable": true
+      },
+      "content": [
+        "Website chỉ thu thập thông tin người dùng gửi qua form liên hệ nhằm phục vụ tư vấn dự án và phản hồi yêu cầu.",
+        "Dữ liệu được lưu trong CMS/Database nội bộ, không công khai ra bên ngoài và có thể xóa theo yêu cầu hợp lệ.",
+        "Thông tin kỹ thuật như IP và user agent được lưu để chống spam và bảo vệ hệ thống."
+      ]
+    }
+  }
+}

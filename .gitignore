@@ -1,0 +1,36 @@
+# Installed dependencies and generated output
+node_modules/
+.runtime/
+.pnpm-store/
+.next/
+out/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+next-env.d.ts
+*.log
+
+# Local environment and credentials (examples are safe to commit)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+infra/nginx/certs/
+
+# Persistent data and local backups
+directus/uploads/
+postgres-data/
+backups/
+*.dump
+
+# OS/editor scratch files
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+*.swp
+*.swo
